@@ -1,19 +1,51 @@
 (ns portfolio.core
     (:require
-      [reagent.core :as r]))
+      [reagent.core :as r]
+      [stylefy.core :as stylefy]))
 
+;; -------------------------
+;; SiteMap
+
+(def projects
+  [{:title "Me" :page "#" :deploy "#" :github "#"}
+  {:title "Recipe Share" :page "#" :deploy "#" :github "#"}
+  {:title "MUD" :page "#" :deploy "#" :github "#"}
+  {:title "Ingspel" :page "#" :deploy "#" :github "#"}])
+
+;; -------------------------
+;; Styles
+
+(def palette
+  {:off-black "#0C0816"
+   :off-white "#F4EFFC"
+   :lavender "#D1BEF4"
+   :blue "#3B77CB"
+   :purple "#362560"})
+
+(def blue-test
+  {:background-color "lavender"
+   :color "grey"})
+
+(def hud-right
+  {:position :fixed
+   :right 0
+   :display :flex
+   :flex-direction :column})
+
+(def nav-link
+  {:font-size 20
+   :color (:blue palette)
+   :padding "3px 20px"})
 ;; -------------------------
 ;; Components
 
 (defn heading []
-  [:h2 "Salutations, external reality."])
+  [:h2 {:style {:color (:blue palette)}} "Salutations, external reality."])
 
 (defn navbar []
-  [:nav
-   [:a {:href "#"} "Me"]
-   [:a {:href "#"} "Recipe Share"]
-   [:a {:href "#"} "MUD"]
-   [:a {:href "#"} "Ingspel"]
+  [:nav (stylefy/use-style hud-right)
+   (for [{text :title destination :page} projects]
+     [:a (stylefy/use-style nav-link {:href destination}) text])
    ])
 
 (defn content []
@@ -25,7 +57,7 @@
   )
 
 (defn footer []
-  [:h2 "Valedictions, cruel universe."])
+  [:h2 {:style {:color (:lavender palette)}} "Valedictions, cruel universe."])
 
 (defn scaffolding []
   [:<>
@@ -41,4 +73,5 @@
   (r/render [scaffolding] (.getElementById js/document "app")))
 
 (defn init! []
+  (stylefy/init)
   (mount-root))
