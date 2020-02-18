@@ -7,10 +7,10 @@
 ;; SiteMap
 
 (def projects
-  [{:title "Me" :page "#" :deploy "#" :github "#"}
-  {:title "Recipe Share" :page "#" :deploy "#" :github "#"}
-  {:title "MUD" :page "#" :deploy "#" :github "#"}
-  {:title "Ingspel" :page "#" :deploy "#" :github "#"}])
+  [{:title "Me" :section "#" :deploy "#" :github "#"}
+  {:title "Recipe Share" :section "#" :deploy "#" :github "#"}
+  {:title "MUD" :section "#" :deploy "#" :github "#"}
+  {:title "Ingspel" :section "#" :deploy "#" :github "#"}])
 
 ;; -------------------------
 ;; Styles
@@ -40,7 +40,7 @@
 ;; Components
 
 (defn heading []
-  [:h2 {:style {:color (:blue palette)}} "Salutations, external reality."])
+  [:h2 {:style {:color (:blue palette)}} "HEADER"])
 
 (defn navbar []
   [:nav (stylefy/use-style hud-right)
@@ -48,16 +48,27 @@
      [:a (stylefy/use-style nav-link {:href destination}) text])
    ])
 
+
 (defn content []
   [:<>
    [:h2 "About Me"]
-   [:p "In the future, will you be able to ethically transform standpoints in your business? Change the way you do business - adopt seamless architectures. Going forward, our long-term capability will deliver value to dot-bombs. We thrive because of our competitive deliverable and mission critical driver culture."]
+   [:p "Nullam eu augue augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce luctus massa nisi, et rhoncus augue bibendum vel. Vestibulum iaculis mollis ultrices. Integer fringilla sollicitudin nunc eu efficitur. Phasellus lacinia bibendum lorem, at volutpat elit dictum id. Donec convallis lacus venenatis tincidunt tincidunt. Vestibulum quis urna eu tellus mollis ornare. Nulla iaculis diam hendrerit molestie mollis. Nunc id justo sit amet arcu vestibulum pulvinar. Cras consectetur, sapien a iaculis dapibus, nibh velit tincidunt turpis, eu mollis velit dui sed arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus egestas, erat ut vulputate feugiat, nunc enim tristique quam, sed vehicula neque tortor sed purus."]
    [:h2 "Skills"]
-   [:p "Reliably touching base about synergising clouds will make us leaders in the unparalleled milestone industry. So we can hit the ground running, we will be virtually offshoring every low hanging fruit in our space. Our executive search development lifecycle enables holistic, innovative verticals. You need to strategically invest your game changers to increase your innovation velocity."]]
-  )
+   [:ul
+    [:li "Praesent sed diam at sapien elementum scelerisque"]
+    [:li "Integer at purus in eros mattis venenatis sed pellentesque nulla"]
+    [:li "Suspendisse at arcu vel tellus posuere fermentum"]
+    [:li "Nulla tempor urna id imperdiet luctus."]]
+   [:h2 "Projects"]
+   [:h3 "Recipe Share"]
+   [:p "Aenean hendrerit, elit dapibus dapibus faucibus, tortor urna fermentum neque, vitae consectetur mauris lectus a est"]
+   [:h3 "MUD"]
+   [:p "Donec mattis, augue vel sodales aliquam, ligula felis mollis nunc, et tristique ipsum augue a ante."]
+   [:h3 "Ingspel"]
+   [:p "In vitae odio interdum, euismod sem eu, interdum ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus."]])
 
 (defn footer []
-  [:h2 {:style {:color (:lavender palette)}} "Valedictions, cruel universe."])
+  [:h2 "FOOTER"])
 
 (defn scaffolding []
   [:<>
