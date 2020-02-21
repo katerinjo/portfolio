@@ -61,11 +61,17 @@
     [:li "Nulla tempor urna id imperdiet luctus."]]
    [:h2 "Projects"]
    [:h3 "Recipe Share"]
-   [:p "Aenean hendrerit, elit dapibus dapibus faucibus, tortor urna fermentum neque, vitae consectetur mauris lectus a est"]
+   [:p "This React Native app is a platform for sharing recipes and tracking innovations made to them."]
+   [:h3 "Treasure Hunt"]
+   [:p "An ASCII grid display watches an automated blockchain-themed fantasy game."]
    [:h3 "MUD"]
-   [:p "Donec mattis, augue vel sodales aliquam, ligula felis mollis nunc, et tristique ipsum augue a ante."]
+   [:p "Walk around a randomly generated maze."]
    [:h3 "Ingspel"]
-   [:p "In vitae odio interdum, euismod sem eu, interdum ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus."]])
+   [:p "English orthography with as clear a pronunciation as possible is generated from phonetic transrciption with this JavaScript utility."]
+   [:h3 "Esperanto Uninflect"]
+   [:p "This Clojure library converts Esperanto vocabulary words in the wild to dictionary form for easy translation into English."]
+   [:h3 "Maui"]
+   [:p "Inspired by an old legend, I made a (highly simplified) climate simulation to explore what a flat world might look like."]])
 
 (defn footer []
   [:h2 "FOOTER"])
