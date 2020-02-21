@@ -15,6 +15,32 @@
 ;; -------------------------
 ;; Styles
 
+; (stylefy/font-face
+;   {:font-family "IBM Plex Mono Text"
+;    :src "url('./fonts/IBMPlexMono-Text.otf') format('opentype')"
+;    :font-weight "normal"
+;    :font-style "normal"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans Bold"
+;    :src "url('./fonts/IBMPlexSans-Bold.otf') format('opentype')"
+;    :font-weight "bold"
+;    :font-style "normal"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans Bold Italic"
+;    :src "url('./fonts/IBMPlexSans-Bold-Italic.otf') format('opentype')"
+;    :font-weight "bold"
+;    :font-style "italic"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans"
+;    :src "url('./fonts/IBMPlexSans-Text.otf') format('opentype')"
+;    :font-weight "normal"
+;    :font-style "normal"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans Italic"
+;    :src "url('./fonts/IBMPlexSans-TextItalic.otf') format('opentype')"
+;    :font-weight "normal"
+;    :font-style "italic"})
+
 (def palette
   {:off-black "#0C0816"
    :off-white "#F4EFFC"
