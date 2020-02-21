@@ -66,7 +66,7 @@
 ;; Components
 
 (defn heading []
-  [:h2 {:style {:color (:blue palette)}} "HEADER"])
+  [:h2 {:style {:color (:blue palette)}} "Catherine Stewart"])
 
 (defn navbar []
   [:nav (stylefy/use-style hud-right)
@@ -78,10 +78,10 @@
 (defn content []
   [:<>
    [:h2 "About Me"]
-   [:p "Nullam eu augue augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce luctus massa nisi, et rhoncus augue bibendum vel. Vestibulum iaculis mollis ultrices. Integer fringilla sollicitudin nunc eu efficitur. Phasellus lacinia bibendum lorem, at volutpat elit dictum id. Donec convallis lacus venenatis tincidunt tincidunt. Vestibulum quis urna eu tellus mollis ornare. Nulla iaculis diam hendrerit molestie mollis. Nunc id justo sit amet arcu vestibulum pulvinar. Cras consectetur, sapien a iaculis dapibus, nibh velit tincidunt turpis, eu mollis velit dui sed arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus egestas, erat ut vulputate feugiat, nunc enim tristique quam, sed vehicula neque tortor sed purus."]
+   [:p "a language nerd breaking into tech hoping to bridge the gap between big idealistic aspirations and a sphexish obsession with syntax, structure, and meaning"]
    [:h2 "Skills"]
    [:ul
-    [:li "JavaScript React"]
+    [:li "JavaScript React Redux Node.js"]
     [:li "Python"]
     [:li "CSS LESS Sass"]
     [:li "SQLite Knex.js"]]
@@ -100,12 +100,12 @@
    [:p "Inspired by an old legend, I generated procedural world maps via a (highly simplified) climate simulation to explore what a flat Earth might look like."]])
 
 (defn footer []
-  [:h2 "(built with ClojureScript and Reagent)"])
+  [:h3 "(built with ClojureScript and Reagent)"])
 
 (defn scaffolding []
   [:<>
    [heading]
-   [navbar]
+   ; [navbar]
    [content]
    [footer]])
 
