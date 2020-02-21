@@ -47,7 +47,11 @@
                          :infer-externs true
                          :pretty-print false}}}}
 
-  :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}
+  :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]
+            "deploy" [["netlify"
+                       "deploy"
+                       "--dir=public"
+                       "--prod"]]}
 
   :profiles {:dev {:source-paths ["src" "env/dev/clj"]
                    :dependencies [[binaryage/devtools "0.9.11"]
