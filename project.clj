@@ -1,6 +1,6 @@
 (defproject portfolio "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "portfolio site"
+  :url "catherinestwrt.com"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
@@ -47,11 +47,7 @@
                          :infer-externs true
                          :pretty-print false}}}}
 
-  :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]
-            "deploy" [["netlify"
-                       "deploy"
-                       "--dir=public"
-                       "--prod"]]}
+  :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}
 
   :profiles {:dev {:source-paths ["src" "env/dev/clj"]
                    :dependencies [[binaryage/devtools "0.9.11"]
