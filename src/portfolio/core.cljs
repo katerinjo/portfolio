@@ -15,6 +15,32 @@
 ;; -------------------------
 ;; Styles
 
+; (stylefy/font-face
+;   {:font-family "IBM Plex Mono Text"
+;    :src "url('./fonts/IBMPlexMono-Text.otf') format('opentype')"
+;    :font-weight "normal"
+;    :font-style "normal"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans Bold"
+;    :src "url('./fonts/IBMPlexSans-Bold.otf') format('opentype')"
+;    :font-weight "bold"
+;    :font-style "normal"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans Bold Italic"
+;    :src "url('./fonts/IBMPlexSans-Bold-Italic.otf') format('opentype')"
+;    :font-weight "bold"
+;    :font-style "italic"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans"
+;    :src "url('./fonts/IBMPlexSans-Text.otf') format('opentype')"
+;    :font-weight "normal"
+;    :font-style "normal"})
+; (stylefy/font-face
+;   {:font-family "IBM Plex Sans Italic"
+;    :src "url('./fonts/IBMPlexSans-TextItalic.otf') format('opentype')"
+;    :font-weight "normal"
+;    :font-style "italic"})
+
 (def palette
   {:off-black "#0C0816"
    :off-white "#F4EFFC"
@@ -40,7 +66,7 @@
 ;; Components
 
 (defn heading []
-  [:h2 {:style {:color (:blue palette)}} "HEADER"])
+  [:h2 {:style {:color (:blue palette)}} "Catherine Stewart"])
 
 (defn navbar []
   [:nav (stylefy/use-style hud-right)
@@ -51,35 +77,61 @@
 
 (defn content []
   [:<>
-   [:h2 "About Me"]
-   [:p "Nullam eu augue augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce luctus massa nisi, et rhoncus augue bibendum vel. Vestibulum iaculis mollis ultrices. Integer fringilla sollicitudin nunc eu efficitur. Phasellus lacinia bibendum lorem, at volutpat elit dictum id. Donec convallis lacus venenatis tincidunt tincidunt. Vestibulum quis urna eu tellus mollis ornare. Nulla iaculis diam hendrerit molestie mollis. Nunc id justo sit amet arcu vestibulum pulvinar. Cras consectetur, sapien a iaculis dapibus, nibh velit tincidunt turpis, eu mollis velit dui sed arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus egestas, erat ut vulputate feugiat, nunc enim tristique quam, sed vehicula neque tortor sed purus."]
+   [:h2 "Catherine Stewart"]
+   [:p "a language nerd breaking into tech to bridge the gap between big idealistic aspirations and a fascination with syntax, structure, and semantics"]
    [:h2 "Skills"]
-   [:ul
-    [:li "Praesent sed diam at sapien elementum scelerisque"]
-    [:li "Integer at purus in eros mattis venenatis sed pellentesque nulla"]
-    [:li "Suspendisse at arcu vel tellus posuere fermentum"]
-    [:li "Nulla tempor urna id imperdiet luctus."]]
+   [:dl
+    [:dt "Languages"]
+    [:dd
+     [:ul
+      [:li "JavaScript " [:span {:style {:opacity 0.5}} "(strong)"]]
+      [:li "Python " [:span {:style {:opacity 0.5}} "(stronger)"]]
+      [:li "Clojure(Script) " [:span {:style {:opacity 0.5}} "(learning)"]]]]
+    [:dt "FE"]
+    [:dd
+     [:ul
+      [:li "HTML5"]
+      [:li "React"]
+      [:li "Redux"]
+      [:li "Semantic UI"]
+      [:li "Formik"]]]
+    [:dt "Style"]
+    [:dd
+     [:ul
+      [:li "CSS"]
+      [:li "Less"]
+      [:li "Sass"]]]
+    [:dt "BE"]
+    [:dd
+     [:ul
+      [:li "Node" [:span {:style {:opacity 0.5}} ".js"]]
+      [:li "Express" [:span {:style {:opacity 0.5}} ".js"]]]]
+    [:dt "Data"]
+    [:dd
+     [:ul
+      [:li "SQLite"]
+      [:li "Knex" [:span {:style {:opacity 0.5}} ".js"]]]]]
    [:h2 "Projects"]
    [:h3 "Recipe Share"]
-   [:p "This React Native app is a platform for sharing recipes and tracking innovations made to them."]
+   [:p "This React Native app is a platform for organizing and sharing recipe innovations."]
    [:h3 "Treasure Hunt"]
-   [:p "An ASCII grid display watches an automated blockchain-themed fantasy game."]
+   [:p "An ASCII grid displays an automated blockchain-themed fantasy game."]
    [:h3 "MUD"]
    [:p "Walk around a randomly generated maze."]
    [:h3 "Ingspel"]
-   [:p "English orthography with as clear a pronunciation as possible is generated from phonetic transrciption with this JavaScript utility."]
+   [:p "English spellings with as obvious a pronunciation as possible are generated from phonetic transcription with this TypeScript utility."]
    [:h3 "Esperanto Uninflect"]
    [:p "This Clojure library converts Esperanto vocabulary words in the wild to dictionary form for easy translation into English."]
    [:h3 "Maui"]
-   [:p "Inspired by an old legend, I made a (highly simplified) climate simulation to explore what a flat world might look like."]])
+   [:p "Inspired by an old legend, I generated procedural world maps via a (highly simplified) climate simulation to explore what a flat Earth might look like."]])
 
 (defn footer []
-  [:h2 "FOOTER"])
+  [:h4 "(built with ClojureScript and Reagent)"])
 
 (defn scaffolding []
   [:<>
-   [heading]
-   [navbar]
+   ; [heading]
+   ; [navbar]
    [content]
    [footer]])
 
