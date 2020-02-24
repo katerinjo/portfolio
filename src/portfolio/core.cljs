@@ -77,14 +77,40 @@
 
 (defn content []
   [:<>
-   [:h2 "About Me"]
-   [:p "a language nerd breaking into tech hoping to bridge the gap between big idealistic aspirations and a sphexish obsession with syntax, structure, and meaning"]
+   [:h2 "Catherine Stewart"]
+   [:p "a language nerd breaking into tech to bridge the gap between big idealistic aspirations and a fascination with syntax, structure, and semantics"]
    [:h2 "Skills"]
-   [:ul
-    [:li "JavaScript React Redux Node.js"]
-    [:li "Python"]
-    [:li "CSS LESS Sass"]
-    [:li "SQLite Knex.js"]]
+   [:dl
+    [:dt "Languages"]
+    [:dd
+     [:ul
+      [:li "JavaScript " [:span {:style {:opacity 0.5}} "(strong)"]]
+      [:li "Python " [:span {:style {:opacity 0.5}} "(stronger)"]]
+      [:li "Clojure(Script) " [:span {:style {:opacity 0.5}} "(learning)"]]]]
+    [:dt "FE"]
+    [:dd
+     [:ul
+      [:li "HTML5"]
+      [:li "React"]
+      [:li "Redux"]
+      [:li "Semantic UI"]
+      [:li "Formik"]]]
+    [:dt "Style"]
+    [:dd
+     [:ul
+      [:li "CSS"]
+      [:li "Less"]
+      [:li "Sass"]]]
+    [:dt "BE"]
+    [:dd
+     [:ul
+      [:li "Node" [:span {:style {:opacity 0.5}} ".js"]]
+      [:li "Express" [:span {:style {:opacity 0.5}} ".js"]]]]
+    [:dt "Data"]
+    [:dd
+     [:ul
+      [:li "SQLite"]
+      [:li "Knex" [:span {:style {:opacity 0.5}} ".js"]]]]]
    [:h2 "Projects"]
    [:h3 "Recipe Share"]
    [:p "This React Native app is a platform for organizing and sharing recipe innovations."]
@@ -100,11 +126,11 @@
    [:p "Inspired by an old legend, I generated procedural world maps via a (highly simplified) climate simulation to explore what a flat Earth might look like."]])
 
 (defn footer []
-  [:h3 "(built with ClojureScript and Reagent)"])
+  [:h4 "(built with ClojureScript and Reagent)"])
 
 (defn scaffolding []
   [:<>
-   [heading]
+   ; [heading]
    ; [navbar]
    [content]
    [footer]])
