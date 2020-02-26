@@ -74,10 +74,16 @@
      [:a (stylefy/use-style nav-link {:href destination}) text])
    ])
 
+(defn profile []
+  [:div {:style {:display :flex :justify-content :space-between}}
+   [:h2 "Catherine Stewart"]
+   [:div {:style {:display :flex :flex-direction :column}}
+    [:a {:href "#"} "GitHub"]
+    [:a {:href "#"} "LinkedIn"]]])
 
 (defn content []
   [:<>
-   [:h2 "Catherine Stewart"]
+   [profile]
    [:p "a language nerd breaking into tech to bridge the gap between big idealistic aspirations and a fascination with syntax, structure, and semantics"]
    [:h2 "Skills"]
    [:dl
