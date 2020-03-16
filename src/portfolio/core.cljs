@@ -43,8 +43,8 @@
   [:div {:style {:display :flex :justify-content :space-between}}
    [:h2 "Catherine Stewart"]
    [:div {:style {:display :flex :flex-direction :column}}
-    [:a {:href "#"} "GitHub"]
-    [:a {:href "#"} "LinkedIn"]]])
+    [:a {:href "https://www.github.com/katerinjo"} "GitHub"]
+    [:a {:href "https://www.linkedin.com/in/katerinjo"} "LinkedIn"]]])
 
 (defn content []
   [:<>
