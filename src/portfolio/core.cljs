@@ -6,41 +6,6 @@
 ;; -------------------------
 ;; SiteMap
 
-(def projects
-  [{:title "Me" :section "#" :deploy "#" :github "#"}
-  {:title "Recipe Share" :section "#" :deploy "#" :github "#"}
-  {:title "MUD" :section "#" :deploy "#" :github "#"}
-  {:title "Ingspel" :section "#" :deploy "#" :github "#"}])
-
-;; -------------------------
-;; Styles
-
-; (stylefy/font-face
-;   {:font-family "IBM Plex Mono Text"
-;    :src "url('./fonts/IBMPlexMono-Text.otf') format('opentype')"
-;    :font-weight "normal"
-;    :font-style "normal"})
-; (stylefy/font-face
-;   {:font-family "IBM Plex Sans Bold"
-;    :src "url('./fonts/IBMPlexSans-Bold.otf') format('opentype')"
-;    :font-weight "bold"
-;    :font-style "normal"})
-; (stylefy/font-face
-;   {:font-family "IBM Plex Sans Bold Italic"
-;    :src "url('./fonts/IBMPlexSans-Bold-Italic.otf') format('opentype')"
-;    :font-weight "bold"
-;    :font-style "italic"})
-; (stylefy/font-face
-;   {:font-family "IBM Plex Sans"
-;    :src "url('./fonts/IBMPlexSans-Text.otf') format('opentype')"
-;    :font-weight "normal"
-;    :font-style "normal"})
-; (stylefy/font-face
-;   {:font-family "IBM Plex Sans Italic"
-;    :src "url('./fonts/IBMPlexSans-TextItalic.otf') format('opentype')"
-;    :font-weight "normal"
-;    :font-style "italic"})
-
 (def palette
   {:off-black "#0C0816"
    :off-white "#F4EFFC"
@@ -68,11 +33,11 @@
 (defn heading []
   [:h2 {:style {:color (:blue palette)}} "Catherine Stewart"])
 
-(defn navbar []
-  [:nav (stylefy/use-style hud-right)
-   (for [{text :title destination :page} projects]
-     [:a (stylefy/use-style nav-link {:href destination}) text])
-   ])
+; (defn navbar []
+;   [:nav (stylefy/use-style hud-right)
+;    (for [{text :title destination :page} projects]
+;      [:a (stylefy/use-style nav-link {:href destination}) text])
+;    ])
 
 (defn profile []
   [:div {:style {:display :flex :justify-content :space-between}}
@@ -120,12 +85,10 @@
    [:h2 "Projects"]
    [:h3 "Recipe Share"]
    [:p "This React Native app is a platform for organizing and sharing recipe innovations."]
-   [:h3 "Treasure Hunt"]
-   [:p "An ASCII grid displays an automated blockchain-themed fantasy game."]
-   [:h3 "MUD"]
-   [:p "Walk around a randomly generated maze."]
    [:h3 "Ingspel"]
    [:p "English spellings with as obvious a pronunciation as possible are generated from phonetic transcription with this TypeScript utility."]
+   [:h3 "Monolog"]
+   [:p "Insert special characters and transformed text anywhere with a pop-up window."]
    [:h3 "Esperanto Uninflect"]
    [:p "This Clojure library converts Esperanto vocabulary words in the wild to dictionary form for easy translation into English."]
    [:h3 "Maui"]
