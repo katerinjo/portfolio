@@ -39,27 +39,39 @@ body {
   font-weight: 400;
   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   color: black;
-  background-color: var(--lavender);
+  background-color: var(--off-white);
 }
 
 /* Structure */
 
-div.page {
+section, .section {
+  margin: 1rem 0.5rem 1.5rem 1rem;
+  padding: 0 1rem 0 2rem;
+  border-left: medium solid lightgrey;
+}
+
+.page {
   margin: auto;
+  padding-top: 1rem;
   background-color: var(--off-white);
   width: var(--max-text-width);
   max-width: 100%;
-  padding: 0.8rem 0;
 }
 
-section {
-  margin: 0 0.5rem 1.5rem 0.5rem;
-  padding: 0.5rem 1rem 0 1rem;
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.inline-branch {
+  display: flex;
+  align-items: baseline;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 h1 {
@@ -147,8 +159,14 @@ ol, ul {
   padding-left: 0;
   margin: 1.5rem 0 1.5rem 3rem;
 }
+ul.inline-branch {
+  list-style: none;
+}
 li {
   margin-bottom: 1rem;
+}
+.inline-branch > li {
+  margin: 0 0.5rem 0 0.5rem;
 }
 
 /* Code */
@@ -178,17 +196,3 @@ td:last-child {
   padding-right: 0;
 }
 
-/* Section Types */
-
-section.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-section.profile li {
-  list-style-type: none;
-}
-
-ul.card-grid > li {
-  list-style-type: none;
-}
