@@ -45,14 +45,14 @@ body {
 /* Structure */
 
 section, .section {
-  margin: 1rem 0.5rem 1.5rem 1rem;
-  padding: 0 1rem 0 2rem;
+  margin: 1rem 0 1.5rem 1rem;
+  padding: 0 0 0 2rem;
   border-left: medium solid lightgrey;
 }
 
 .page {
   margin: auto;
-  padding-top: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   background-color: var(--off-white);
   width: var(--max-text-width);
   max-width: 100%;
@@ -67,6 +67,22 @@ section, .section {
 .inline-branch {
   display: flex;
   align-items: baseline;
+}
+
+.grid-branch {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.grid-branch > section {
+  border-left: none;
+  border-top: medium solid lightgrey;
+  padding: 0.5rem 0 0 0;
+  width: 20rem;
+  max-width: 100%;
+  margin: 0 1rem 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
