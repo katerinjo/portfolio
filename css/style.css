@@ -113,7 +113,7 @@ img {
 
 section {
   box-sizing: border-box;
-  margin: 2.5rem 0 4rem 0;
+  margin: 2rem 0 4rem 0;
   padding: 0 0 0 2rem;
   border-left: medium solid lightgrey;
 }
@@ -141,6 +141,7 @@ div.header {
   align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .horizontal {
@@ -171,7 +172,6 @@ div.header {
 .grid-branch > div {
   display: flex;
   justify-content: space-between;
-  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -179,11 +179,13 @@ div.header {
   border-left: none;
   border-bottom: none;
   border-top: medium solid lightgrey;
-  padding: 1rem 0 0 0;
-  width: 21rem;
+  padding: 1rem 1rem 0 0;
+  width: 18rem;
   max-width: 100%;
-  margin: 2rem 0 0 0;
+  margin: 1.5rem auto;
+  white-space: nowrap;
 }
+
 
 /* Misc Classes */
 
