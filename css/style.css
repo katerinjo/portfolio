@@ -43,21 +43,18 @@ body {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
+  line-height: 1;
   font-weight: bold;
 }
 h1 {
   font-size: 3.2rem;
-  line-height: 1.35;
 }
 h2 {
   font-size: 2.6rem;
-  line-height: 1.4;
 }
 h3 {
   font-size: 2.0rem;
-  line-height: 1.45;
 }
 
 /* Links */
@@ -73,7 +70,7 @@ a:hover {
 /* Body */
 
 p {
-  margin: 0 0 0.7rem 0;
+  margin: 0 1rem 0.7rem 0;
   padding: 0;
 }
 ul {
@@ -95,6 +92,12 @@ li {
 }
 .horizontal > li {
   margin: 0 0.5rem 0 0.5rem;
+}
+.horizontal > li:last-child {
+  margin-right: 1rem;
+}
+.horizontal > li:first-child {
+  margin-left: 1rem;
 }
 
 /* Code */
@@ -137,22 +140,32 @@ img {
 
 /* Structure */
 
-section, .section {
+section {
   box-sizing: border-box;
-  margin: 1rem 0 2rem 0;
+  margin: 2.5rem 0 4rem 0;
   padding: 0 0 0 2rem;
   border-left: medium solid lightgrey;
 }
 
+section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  border-bottom: thick solid lightgrey;
+}
+
 .root {
   margin: auto;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 2rem 0 0 2rem;
   background-color: var(--off-white);
   width: var(--max-text-width);
   max-width: 100%;
 }
 
 .header {
+  margin-bottom: 1rem;
+}
+
+div.header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -169,19 +182,24 @@ section, .section {
 }
 
 .grid-branch {
+  padding-bottom: 0;
+}
+
+.grid-branch > div {
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
 }
 
-.grid-branch > section {
+.grid-branch section {
   border-left: none;
+  border-bottom: none;
   border-top: medium solid lightgrey;
-  padding: 0.5rem 0 0 0;
+  padding: 1rem 0 0 0;
   width: 21rem;
   max-width: 100%;
-  margin: 0 1rem 1rem 0;
+  margin: 2rem 0 0 0;
 }
 
 /* Profile */
