@@ -1,9 +1,7 @@
 :root {
   --off-black: #0C0816;
-  --off-white: #F4EFFF;
-  --lavender: #D1BEF4;
-  --blue: #3B77CB;
-  --purple: #362560;
+  --off-white: #f9f8fa;
+  --blue: #5c82d2;
   --max-text-width: 75rem;
 }
 
