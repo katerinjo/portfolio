@@ -137,13 +137,14 @@ section:last-child {
 }
 
 hr {
-  width: 16rem;
+  width: 12rem;
   max-width: 90%;
   height: 0;
   border-top: medium solid lightgrey;
   border-bottom: none;
   border-left: none;
   border-right: none;
+  margin: 1.6rem auto;
 }
 
 div.header {
