@@ -181,13 +181,7 @@ div.header {
   flex-wrap: wrap;
 }
 .header li {
-  margin: 0 0.5rem;
-}
-.header li:last-child {
-  margin-right: 1rem;
-}
-.header li:first-child {
-  margin-left: 0;
+  margin: 0 1rem 0 0;
 }
 
 .grid-branch {
