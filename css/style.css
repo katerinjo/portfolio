@@ -112,7 +112,7 @@ ol, ul {
 }
 
 li {
-  margin-bottom: 0.7rem;
+  margin: 0 1rem 0.7rem 0;
   list-style: none;
 }
 
