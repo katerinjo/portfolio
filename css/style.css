@@ -36,9 +36,9 @@ section:last-child {
   border-bottom: thick solid lightgrey;
 }
 
-.root {
-  margin: auto;
-  padding: 1rem 0 0 2rem;
+section.root {
+  margin: 0 auto 1rem auto;
+  padding: 1rem 0 1rem 2rem;
   background-color: var(--off-white);
   width: var(--max-text-width);
   max-width: 100%;
