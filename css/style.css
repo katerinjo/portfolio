@@ -57,7 +57,7 @@ div.header {
 }
 
 .header ul {
-  margin: 0 0 1rem 0;
+  margin: 0 0.5rem 1rem 0;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
@@ -65,6 +65,7 @@ div.header {
 
 .header li {
   margin: 0 1rem 0 0;
+  padding: 0;
 }
 
 .grid-branch {
@@ -102,28 +103,29 @@ hr {
 /* Body */
 
 p {
-  margin: 0 1rem 0.7rem 0;
+  margin: 0 1.5rem 0.7rem 0;
   padding: 0;
 }
 
 ol, ul {
   padding: 0;
-  margin: 0 0 0.7rem 2rem;
+  margin: 0 0.5rem 0.7rem 0;
 }
 
 li {
   margin: 0 1rem 0.7rem 0;
+  padding-left: 2rem;
   list-style: none;
 }
 
 ul.done {
-  padding: 0;
-  margin: 0 0 0.7rem 0;
+  margin-left: 0;
   list-style-position: outside;
 }
 
 .done li {
   margin-bottom: 1rem;
+  padding: 0;
 }
 
 .done li:before {
