@@ -143,6 +143,33 @@ ul.done {
   border-left: medium solid lightgrey;
 }
 
+img {
+  float: right;
+  width: 28rem;
+  height: 11rem;
+  margin: 0 1rem 0.6rem 1rem;
+  border: thin solid lightgrey;
+}
+
+#dish {
+  width: 31rem;
+  height: 12rem;
+}
+
+#spel {
+  width: 45rem;
+  height: 8rem;
+}
+
+#maui {
+  width: 23rem;
+  height: 9rem;
+}
+
+#log {
+  height: 8rem;
+}
+
 /* Inline Styling */
 
 a {
@@ -184,14 +211,6 @@ h3 {
 
 /* About */
 
-img {
-  display: inline-block;
-  width: 7rem;
-  height: 7rem;
-  margin: 0;
-  border-radius: 50%;
-}
-
 .bio {
   display: flex;
   justify-content: center;
@@ -212,6 +231,14 @@ img {
 
 .bio .header li {
   margin: 0 0.5rem;
+}
+
+.bio img {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  margin: 0;
+  border-radius: 50%;
 }
 
 @media (max-width: 740px) {
