@@ -1,8 +1,8 @@
 /* Constants */
 
 :root {
-  --off-black: #0C0816;
-  --off-white: #f9f8fa;
+  --off-black: #111;
+  --off-white: #eee;
   --blue: #5c82d2;
   --max-text-width: 74rem;
 }
@@ -25,7 +25,7 @@ body {
 
 section {
   box-sizing: border-box;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0 4rem -1rem;
   padding: 0 0 0 2rem;
   border-left: medium solid lightgrey;
 }
@@ -149,6 +149,7 @@ img {
   height: 11rem;
   margin: 0 1rem 0.6rem 1rem;
   border: thin solid lightgrey;
+  max-width: 100%;
 }
 
 #dish {
