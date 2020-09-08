@@ -16,6 +16,11 @@
 
 /* Base Styles */
 
+* {
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
 html {
   font-size: 62.5%;
 }
