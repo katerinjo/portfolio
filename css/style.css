@@ -5,6 +5,8 @@
   --off-white: #eee;
   --blue: #5c82d2;
   --max-text-width: 74rem;
+  --foreground: var(--off-white);
+  --background: var(--off-black);
 }
 
 /* Base Styles */
@@ -13,12 +15,28 @@ html {
   font-size: 62.5%;
 }
 
+@media (prefers-color-scheme: light) {
+  html {
+    --foreground: var(--off-black);
+    --background: var(--off-white);
+  }
+}
+
+html.dark {
+  --foreground: var(--off-white);
+  --background: var(--off-black);
+}
+html.light {
+  --foreground: var(--off-black);
+  --background: var(--off-white);
+}
+
 body {
   font-size: 1.8em;
   line-height: 1.5;
   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
-  color: black;
-  background-color: var(--off-white);
+  color: var(--foreground);
+  background-color: var(--background);
 }
 
 /* Structure */
@@ -39,7 +57,7 @@ section:last-child {
 section.root {
   margin: 0 auto 1rem auto;
   padding: 1rem 0 1rem 2rem;
-  background-color: var(--off-white);
+  background-color: var(--background);
   width: var(--max-text-width);
   max-width: 100%;
 }
@@ -262,4 +280,16 @@ h3 {
 
 .blurb {
   text-align: center;
+}
+
+/* Dark Mode Button */
+
+#light-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  font-size: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
