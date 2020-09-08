@@ -49,15 +49,15 @@ body {
 
 section {
   box-sizing: border-box;
-  margin: 2rem 0 4rem -1rem;
-  padding: 0 0 0 2rem;
-  border-left: medium solid var(--grey);
+  margin: 2rem 0 4rem 0;
+  /* padding: 0 0 0 2rem; */
+  /* border-left: medium solid var(--grey); */
 }
 
 section:last-child {
   margin-bottom: 0;
   padding-bottom: 1rem;
-  border-bottom: thick solid var(--grey);
+  /* border-bottom: thick solid var(--grey); */
 }
 
 section.root {
