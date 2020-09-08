@@ -13,6 +13,7 @@
 /* Base Styles */
 
 * {
+  box-sizing: border-box;
   color: var(--foreground);
   background-color: var(--background);
 }
@@ -62,7 +63,7 @@ section:last-child {
 
 section.root {
   margin: 0 auto 1rem auto;
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 1rem 1rem 2rem;
   background-color: var(--background);
   width: var(--max-text-width);
   max-width: 100%;
@@ -169,30 +170,9 @@ ul.done {
 
 img {
   float: right;
-  width: 28rem;
-  height: 11rem;
   margin: 0 1rem 0.6rem 1rem;
   border: medium solid var(--grey);
-  max-width: 100%;
-}
-
-#dish {
-  width: 31rem;
-  height: 12rem;
-}
-
-#spel {
-  width: 45rem;
-  height: 8rem;
-}
-
-#maui {
-  width: 23rem;
-  height: 9rem;
-}
-
-#log {
-  height: 8rem;
+  max-width: calc(100% - 1rem);
 }
 
 /* Inline Styling */
