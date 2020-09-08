@@ -5,13 +5,9 @@
   --off-white: #eee;
   --blue: #46f;
   --grey: #888;
-  --lightgrey: #aaa;
-  --darkgrey: #666;
   --max-text-width: 74rem;
   --foreground: var(--off-white);
   --background: var(--off-black);
-  --strong: var(--lightgrey);
-  --faint: var(--darkgrey);
 }
 
 /* Base Styles */
@@ -29,22 +25,16 @@ html {
   html {
     --foreground: var(--off-black);
     --background: var(--off-white);
-    --strong: var(--darkgrey);
-    --faint: var(--lightgrey);
   }
 }
 
 html.dark {
   --foreground: var(--off-white);
   --background: var(--off-black);
-  --strong: var(--lightgrey);
-  --faint: var(--darkgrey);
 }
 html.light {
   --foreground: var(--off-black);
   --background: var(--off-white);
-  --strong: var(--darkgrey);
-  --faint: var(--lightgrey);
 }
 
 body {
@@ -217,7 +207,7 @@ a:hover {
 }
 
 .fade {
-  color: #A0A0A0;
+  opacity: 0.7;
 }
 
 /* Headings */
