@@ -1,4 +1,4 @@
-/* Constants */
+/* Variables */
 
 :root {
   --off-black: #111;
@@ -8,6 +8,19 @@
   --max-text-width: 74rem;
   --foreground: var(--off-white);
   --background: var(--off-black);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground: var(--off-black);
+    --background: var(--off-white);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: var(--off-white);
+    --background: var(--off-black);
+  }
 }
 
 /* Base Styles */
@@ -20,13 +33,6 @@
 
 html {
   font-size: 62.5%;
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    --foreground: var(--off-black);
-    --background: var(--off-white);
-  }
 }
 
 html.dark {
