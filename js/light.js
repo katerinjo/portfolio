@@ -3,6 +3,9 @@ const lightBtn = document.getElementById('light-switch');
 if (window.matchMedia("(prefers-color-scheme: light)").matches) {
     document.documentElement.classList.add('light');
     lightBtn.textContent = '☽';
+} else {
+    document.documentElement.classList.add('dark');
+    lightBtn.textContent = '☀';
 }
 
 const brightToggle = () => {
