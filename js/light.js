@@ -1,22 +1,39 @@
 const lightBtn = document.getElementById('light-switch');
 
-if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-    document.documentElement.classList.add('light');
-    lightBtn.textContent = '☽';
+const stored = localStorage.getItem('prefers-color-theme');
+let osPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches
+
+const addDark = () => {
+  document.documentElement.classList.remove('light');
+  document.documentElement.classList.add('dark');
+  lightBtn.textContent = '☀';
+};
+
+const addLight = () => {
+  document.documentElement.classList.remove('dark');
+  document.documentElement.classList.add('light');
+  lightBtn.textContent = '☽';
+};
+
+if (stored === 'light') {
+  addLight();
+} else if (stored === 'dark') {
+  addDark();
 } else {
-    document.documentElement.classList.add('dark');
-    lightBtn.textContent = '☀';
+  if (osPrefersLight) {
+    addLight();
+  } else {
+    addDark();
+  }
 }
 
 const brightToggle = () => {
   if (document.documentElement.classList.contains('light')) {
-    document.documentElement.classList.remove('light');
-    document.documentElement.classList.add('dark');
-    lightBtn.textContent = '☀';
+    addDark();
+    localStorage.setItem('prefers-color-theme', 'dark');
   } else {
-    document.documentElement.classList.remove('dark');
-    document.documentElement.classList.add('light');
-    lightBtn.textContent = '☽';
+    addLight();
+    localStorage.setItem('prefers-color-theme', 'light');
   }
 };
 
