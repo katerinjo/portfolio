@@ -116,9 +116,9 @@ div.header {
   border-bottom: none;
   border-top: medium solid var(--grey);
   padding: 1rem 1rem 0 0;
-  width: 18rem;
+  width: 20rem;
   max-width: 100%;
-  margin: 1.5rem 1rem 1.5rem 0;
+  margin: 1.5rem 2rem 1.5rem 2rem;
   white-space: nowrap;
 }
 
@@ -153,19 +153,22 @@ li {
 
 ul.done {
   margin-left: 0;
-  list-style-position: outside;
+  /* list-style-position: outside; */
 }
 
 .done li {
-  margin-bottom: 1rem;
+  margin: 2rem 1rem 2rem 3rem;
+  /* margin-bottom: 1rem; */
+  /* margin-left: 2rem; */
   padding: 0;
+  list-style: disc;
 }
 
-.done li:before {
-  content: '\2713';
-  display: inline-block;
-  margin-right: 1rem;
-}
+/* .done li:before { */
+/*   content: '\2713'; */
+/*   display: inline-block; */
+/*   margin-right: 1rem; */
+/* } */
 
 .stack {
   font-style: italic;
