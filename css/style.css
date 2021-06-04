@@ -5,6 +5,7 @@
   --off-white: #eee;
   --blue: #46f;
   --grey: #888;
+  --green: #090;
   --max-text-width: 74rem;
   --foreground: var(--off-white);
   --background: var(--off-black);
@@ -183,6 +184,20 @@ img {
   margin: 0 1rem 2rem 0;
   border: medium solid var(--grey);
   max-width: calc(100% - 1rem);
+}
+
+pre {
+  white-space: normal;
+  border: medium solid var(--grey);
+  padding: 1rem;
+  background-color: var(--off-black);
+}
+
+pre code {
+  color: var(--green);
+  font-size: 1.8rem;
+  white-space: pre-line;
+  background-color: var(--off-black);
 }
 
 /* Inline Styling */
