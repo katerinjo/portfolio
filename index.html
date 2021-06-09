@@ -19,7 +19,7 @@
       <img src="img/avatar.jpg" alt="headshot">
       <div class="header">
         <h1>Catherine Stewart</h1>
-        <ul class="horizontal links">
+        <ul>
           <li><a href="mailto:catherine.c.stwrt@gmail.com">Email</a></li>
           <li><a href="https://www.github.com/katerinjo">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/katerinjo">LinkedIn</a></li>
@@ -30,7 +30,7 @@
       <h2>Skill Keywords</h2>
       <div>
         <section>
-          <h3 class="header">Python 3</h3>
+          <h3>Python 3</h3>
           <ul>
             <li>Scripting with PathLib &amp;c.</li>
             <li>Beautiful Soup</li>
@@ -39,7 +39,7 @@
           </ul>
         </section>
         <section>
-          <h3 class="header">JavaScript</h3>
+          <h3>JavaScript</h3>
           <ul>
             <li>React</li>
             <li>Redux</li>
@@ -53,38 +53,38 @@
       <h2>Projects</h2>
       <section>
         <div class="header">
-          <div class="horizontal">
-            <h3>My Dish</h3>
-            <ul class="stack">
-              <li>React Native</li>
-              <li>Node<span class="fade">.js</span></li>
-              <li>Express<span class="fade">.js</span></li>
-              <li>Knex<span class="fade">.js</span></li>
-            </ul>
-            <p class="fade">(Team Project)</p>
-          </div>
-          <ul class="horizontal links">
+          <h3>My Dish</h3>
+          <ul>
             <li><a href="https://play.google.com/store/apps/details?id=com.lambdaschool.mydish">Deployment</a></li>
             <li><a href="https://github.com/Lambda-School-Labs/mydish-be/tree/0f8b4ea4bdee3a7997ce1f995ffc5da868177c1a">GitHub</a></li>
           </ul>
         </div>
         <img src="img/dish.png">
         <p>A platform for organizing and sharing recipe innovations and variations, lifting collaboration out of the comment section to become a first-class priority</p>
-        <ul class="done">
-          <li>Implemented a database targeting both Postgres and SQLite</li>
-          <li>Created a RESTful API with Express</li>
-          <li>Contributed to high-level design considerations for the new project</li>
-        </ul>
+        <dl>
+          <dt>Tech used:</dt>
+          <dd>
+            <ul>
+              <li>React Native</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>Knex</li>
+            </ul>
+          </dd>
+          <dt>What I did:</dt>
+          <dd>
+            <ul>
+              <li>Implemented a database targeting both Postgres and SQLite</li>
+              <li>Created a RESTful API with Express</li>
+              <li>Contributed to high-level design considerations for the new project</li>
+            </ul>
+          </dd>
+        </dl>
       </section>
       <section>
         <div class="header">
-          <div class="horizontal">
-            <h3>Writmacs</h3>
-            <ul class="stack">
-              <li>Python</li>
-            </ul>
-          </div>
-          <ul class="horizontal links">
+          <h3>Writmacs</h3>
+          <ul>
             <li><a href="https://github.com/katerinjo/writmacs">GitHub</a></li>
           </ul>
         </div>
@@ -98,40 +98,52 @@
                 &lt;em&gt;That&apos;s&lt;/em&gt; how you sound!</code>
         </pre>
         <p>A Python library and command-line utility for document formatting that targets HTML, Markdown, and plain text</p>
-        <ul class="done">
-          <li>Wrote a Regex-based parser for a LaTeX-like syntax from scratch</li>
-          <li>Created both a library and command-line interface for text macro expansion using Setup Tools</li>
-        </ul>
+        <dl>
+          <dt>Tech used:</dt>
+          <dd>
+            <ul>
+              <li>Python</li>
+            </ul>
+          </dd>
+          <dt>What I did:</dt>
+          <dd>
+            <ul>
+              <li>Wrote a Regex-based parser for a LaTeX-like syntax from scratch</li>
+              <li>Created both a library and command-line interface for text macro expansion using Setup Tools</li>
+            </ul>
+          </dd>
+        </dl>
       </section>
       <section>
         <div class="header">
-          <div class="horizontal">
-            <h3>Maui</h3>
-            <ul class="stack">
-              <li>Node<span class="fade">.js</span></li>
-              <li>PNG<span class="fade">.js</span></li>
-            </ul>
-          </div>
-          <ul class="horizontal">
+          <h3>Maui</h3>
+          <ul>
             <li><a href="https://github.com/katerinjo/Maui">GitHub</a></li>
           </ul>
         </div>
         <img src="img/maui.png">
         <p>Simulates climate in generated maps to explore what a flat Earth might look like</p>
-        <ul class="done">
-          <li>Modeled complicated climatology and physics concepts with simple principles</li>
-          <li>Implemented a noise-generation algorithm</li>
-        </ul>
+        <dl>
+          <dt>Tech used:</dt>
+          <dd>
+            <ul>
+              <li>Node</li>
+              <li>PNG.js</li>
+            </ul>
+          </dd>
+          <dt>What I did:</dt>
+          <dd>
+            <ul>
+              <li>Modeled complicated climatology and physics concepts with simple principles</li>
+              <li>Implemented a noise-generation algorithm</li>
+            </ul>
+          </dd>
+        </dl>
       </section>
       <section>
         <div class="header">
-          <div class="horizontal">
-            <h3>Ingspel</h3>
-            <ul class="stack">
-              <li>TypeScript</li>
-            </ul>
-          </div>
-          <ul class="horizontal">
+          <h3>Ingspel</h3>
+          <ul>
             <li><a href="https://github.com/katerinjo/ingspel">GitHub</a></li>
           </ul>
         </div>
@@ -144,10 +156,21 @@
                 yannee</code>
         </pre>
         <p>Converts phonetic transcription to normal English orthography to make invented names legible, using heuristics described in Richard L. Venezky's <i>The&nbsp;American&nbsp;Way&nbsp;of&nbsp;Spelling</i></p>
-        <ul class="done">
-          <li>Modeled English orthography in terms of analytical rules and generalized those rules to cover possible but unattested possibilities</li>
-          <li>Implemented a parser for phonetic transcription</li>
-        </ul>
+        <dl>
+          <dt>Tech used:</dt>
+          <dd>
+            <ul>
+              <li>TypeScript</li>
+            </ul>
+          </dd>
+          <dt>What I did:</dt>
+          <dd>
+            <ul>
+              <li>Modeled English orthography in terms of analytical rules and generalized those rules to cover possible but unattested possibilities</li>
+              <li>Implemented a parser for phonetic transcription</li>
+            </ul>
+          </dd>
+        </dl>
       </section>
   </section>
 </body>
