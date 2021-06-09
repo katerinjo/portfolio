@@ -176,12 +176,20 @@ pre {
   border: medium solid var(--grey);
   padding: 1rem;
   background-color: var(--off-black);
+  overflow: scroll;
 }
 
-pre code {
+code {
   color: var(--green);
+}
+
+samp {
+  color: var(--off-white);
+}
+
+pre code, pre samp {
   font-size: 1.8rem;
-  white-space: pre-line;
+  white-space: pre;
   background-color: var(--off-black);
 }
 

@@ -89,13 +89,15 @@
           </ul>
         </div>
         <pre>
-
-          <code>$ writmacs md &lt;&lt;EOF
-                &gt; %mono(%smallcaps{%studly(beep-boop I&apos;m a robot beep-boop)})
-                &gt; EOF
-                `ʙᴇEᴘ-BᴏOᴘ ɪ&apos;ᴍ A Rᴏʙᴏᴛ ʙEEᴘ-BᴏOᴘ`
-                $ echo $&apos;%em(That\&apos;s) how you sound!&apos; | writmacs html
-                &lt;em&gt;That&apos;s&lt;/em&gt; how you sound!</code>
+<code>$ writmacs md &lt;&lt;EOF
+&gt; %mono(%smallcaps{%studly(beep-boop I&apos;m a robot beep-boop)})
+&gt; EOF
+</code>
+<samp>`ʙᴇEᴘ-BᴏOᴘ ɪ&apos;ᴍ A Rᴏʙᴏᴛ ʙEEᴘ-BᴏOᴘ`
+</samp>
+<code>$ echo &quot;%em(That&apos;s) how you sound!&quot; | writmacs html
+</code>
+<samp>&lt;em&gt;That&apos;s&lt;/em&gt; how you sound!</samp>
         </pre>
         <p>A Python library and command-line utility for document formatting that targets HTML, Markdown, and plain text</p>
         <dl>
@@ -148,12 +150,17 @@
           </ul>
         </div>
         <pre>
-          <code>$ nodejs ingspel.js 'b@rido'
-                burredo
-                $ nodejs ingspel.js 'sup@rk{l@fr{dZ@lIstIkekspi{lIdoS@s'
-                supurcallufrajullistikexpeallidoshuss
-                $ nodejs ingspel.js 'j{ni'
-                yannee</code>
+<code>$ nodejs ingspel.js 'b@rido'
+</code>
+<samp>burredo
+</samp>
+<code>$ nodejs ingspel.js 'sup@rk{l@fr{dZ@lIstIkekspi{lIdoS@s'
+</code>
+<samp>supurcallufrajullistikexpeallidoshuss
+</samp>
+<code>$ nodejs ingspel.js 'j{ni'
+</code>
+<samp>yannee</samp>
         </pre>
         <p>Converts phonetic transcription to normal English orthography to make invented names legible, using heuristics described in Richard L. Venezky's <i>The&nbsp;American&nbsp;Way&nbsp;of&nbsp;Spelling</i></p>
         <dl>
