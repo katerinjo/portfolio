@@ -81,6 +81,7 @@ div.header {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .header li {
@@ -128,12 +129,12 @@ p {
 ol, ul {
   padding: 0;
   margin: 0 0.5rem 0.7rem 0;
+  list-style-position: inside;
 }
 
 li {
   margin: 0.5rem 1rem 0.7rem 0;
   padding-left: 2rem;
-  list-style: none;
 }
 
 ul.done {
